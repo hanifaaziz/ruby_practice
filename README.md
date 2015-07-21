@@ -2,8 +2,19 @@
 my_name = "hanifa"
 my_age = 20
 female = true
-height = 158
-weight = 45 
+height = 1.58
+weight = 45
 uni = "queen mary" 
 
-puts "My name is #{my_name}.capitalize! , I am #{my_age} years old."
+my_name.capitalize!
+bmi = weight/height/height
+
+puts "My name is #{my_name}, I am #{my_age} years old."
+puts "My weight is #{weight}, my height is #{height} and my BMI is #{bmi}"
+
+if bmi => 20
+print "Your bmi is healthy"
+else 
+print "You are underweight"
+end
+
